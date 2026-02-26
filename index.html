@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Empresa Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="encabezado-sitio">
+    <div class="logo-sitio">
+      <h3>EmpresaDemo</h3>
+    </div>
+
+    <nav class="navegacion-principal" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <form class="formulario-busqueda" action="#" method="get">
+      <label class="sr-only" for="busqueda">Buscar</label>
+      <input id="busqueda" type="search" placeholder="Buscar..." />
+      <button type="submit" aria-label="Buscar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-search" viewBox="0 0 16 16">
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+        </svg>
+      </button>
+    </form>
+  </header>
+
+  <main class="contenido-principal">
+
+    <section class="seccion-destacada" aria-label="Sección destacada">
+      <article class="texto-destacado">
+        <h2>Agenda una <span>Cita</span></h2>
+        <p>
+          Ofrecemos soluciones profesionales adaptadas a tus necesidades.
+          Nuestro equipo está listo para apoyarte.
+        </p>
+
+        <div class="acciones-destacadas">
+          <select aria-label="Más información">
+            <option selected>Más información</option>
+            <option>Planes</option>
+            <option>Precios</option>
+            <option>FAQ</option>
+          </select>
+
+          <button type="button">Servicios</button>
+        </div>
+      </article>
+
+      <aside class="formulario-cita" aria-label="Formulario de cita">
+        <h3>Es rápido y sencillo</h3>
+
+        <form action="#" method="post">
+          <div class="fila-formulario">
+            <input type="text" placeholder="Nombre" name="nombre" required />
+            <input type="text" placeholder="Apellido" name="apellido" required />
+          </div>
+
+          <input type="text" placeholder="Teléfono o correo" name="contacto" required />
+          <textarea placeholder="Mensaje" name="mensaje" rows="4"></textarea>
+
+          <div class="fila-formulario">
+            <input type="date" name="fecha" />
+            <input type="time" name="hora" />
+          </div>
+
+          <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+      </aside>
+    </section>
+
+    <section class="seccion-servicios" aria-label="Servicios">
+      <article class="servicio-item">
+        <span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="iconos" viewBox="0 0 16 16">
+            <path
+              d="M6.445 11.688V6.354h-.633A13 13 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23" />
+            <path
+              d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+          </svg>
+        </span>
+        <p>Agenda flexible</p>
+      </article>
+
+      <article class="servicio-item">
+        <span aria-hidden="true">✓</span>
+        <p>Atención puntual</p>
+      </article>
+
+      <article class="servicio-item">
+        <span aria-hidden="true">★</span>
+        <p>Seguimiento</p>
+      </article>
+
+      <article class="servicio-item">
+        <span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="iconos" viewBox="0 0 16 16">
+            <path
+              d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+            <path
+              d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2" />
+          </svg>
+        </span>
+        <p>Asesoría</p>
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="pie-sitio">
+    <p>© 2026 EmpresaDemo. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
